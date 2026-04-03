@@ -22,7 +22,6 @@ Creates a new tool definition in one click. Tools gate zone access — a player 
 
 ## After Creating
 
-- Run **Overlooted → Build → 5 - Sync StreamingAssets** to push data to Core
 - Add `"tool.lantern"` to the `requiredTools` array of any zone it should gate (use the **New Zone Wizard** or edit `zones.json` directly)
 - Create a physical tool prefab and wire it to `ProgressionManager.TryUnlockTool()` so purchasing it in-game registers the unlock
 

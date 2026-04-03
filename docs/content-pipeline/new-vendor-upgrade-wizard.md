@@ -20,7 +20,6 @@ Creates a new vendor upgrade tier in one click. Vendor upgrades are milestone re
 
 ## After Creating
 
-- Run **Overlooted → Build → 5 - Sync StreamingAssets**
 - Open the vendor's GameObject in the scene and find `VendorShopUpgradeMono`
 - Add an entry to its upgrade list, set the **Upgrade ID** to `upgrade.gilded_stall`, and assign the GameObjects to activate at that tier
 

@@ -27,7 +27,6 @@ SFX and VFX fields are optional. Leave blank to use the item-level override or t
 
 ## After Creating
 
-- Run **Overlooted → Build → 5 - Sync StreamingAssets**
 - Set `"rarityId": "rarity.mythic"` on any item in `items.json` that should use this tier
 - Register any new SFX/VFX assets via the **Asset Scanner** before assigning them here
 

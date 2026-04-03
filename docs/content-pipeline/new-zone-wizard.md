@@ -22,11 +22,10 @@ Creates a new zone data definition in one click. A zone is a dungeon area the pl
 
 The zone definition exists in data but has no spawn points yet. To finish setting it up:
 
-1. Run **Overlooted → Build → 5 - Sync StreamingAssets**
-2. Edit `zones.json` to add `itemSpawnPoints` entries (item ID + spawn chance + spawn point name)
-3. Run **Overlooted → Build → 3 - Zone Scenes** to generate the Unity scene — spawn point GameObjects are auto-created from the JSON
-4. Open the scene and reposition the spawn point GameObjects to sensible world positions
-5. Add `"zone.sunken_crypt"` to the `unlocksZones` array of the tool that should gate it
+1. Edit `zones.json` to add `itemSpawnPoints` entries (item ID + spawn chance + spawn point name)
+2. Run **Overlooted → Build → 3 - Zone Scenes** to generate the Unity scene — spawn point GameObjects are auto-created from the JSON
+3. Open the scene and reposition the spawn point GameObjects to sensible world positions
+4. Add `"zone.sunken_crypt"` to the `unlocksZones` array of the tool that should gate it
 
 ## Spawn Points
 

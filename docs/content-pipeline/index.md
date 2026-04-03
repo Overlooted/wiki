@@ -45,7 +45,6 @@ The system is designed so you can't ship broken data:
 2. Edit `zones.json` to add spawn points for the zone
 3. **New Tool…** → set cost / slot → add the zone ID to Unlocks Zones → Create
 4. **Build → 3 - Zone Scenes** to generate the Unity scene
-5. **Build → 5 - Sync StreamingAssets**
 
 ### Adding new audio
 1. Drop `.wav` into `Assets/Resources/Audio/SFX/item/`

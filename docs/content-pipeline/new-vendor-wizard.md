@@ -21,7 +21,6 @@ Creates a new vendor definition in one click. Vendors are the sell points player
 
 ## After Creating
 
-- Run **Overlooted → Build → 5 - Sync StreamingAssets**
 - Place a `VendorMono` in a scene and set its **Vendor ID** field to `vendor.antique_dealer`
 - Optionally add a `VendorAnimator` to the same GameObject for the celebration animation on sale
 

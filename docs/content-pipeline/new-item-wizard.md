@@ -57,7 +57,6 @@ Override priority (highest to lowest):
 
 ## After Creating
 
-- Run **Overlooted → Build → 5 - Sync StreamingAssets** if you also need the data updated in the Core repo
 - Drop a mesh into `Resources/ItemMeshes/` named `{meshId}` then run **Generate Item Prefabs** to pre-load it
 - Register audio/VFX assets via **Overlooted → Assets → Asset Scanner** so they appear in the SFX/VFX pickers
 
