@@ -42,14 +42,8 @@ Builds `Hub.unity` and one scene per zone from `zones.json`.
 
 Builds HUD prefabs for tool slots, gold display, interaction prompts, etc.
 
-## Phase 5 — Sync StreamingAssets
-
-**Overlooted → Build → 5 - Sync StreamingAssets**
-
-Copies `../Overlooted-Core/Data/` → `Assets/StreamingAssets/Data/`. Run this whenever you edit JSON in Core.
-
 ## Build All
 
 **Overlooted → Build → All**
 
-Runs phases 1 → 5 in sequence. Equivalent to running each individually. Does not build puzzle prefabs/demos — run those separately if needed.
+Runs phases 1–4 in sequence. Does not build puzzle prefabs/demos — run those separately if needed.

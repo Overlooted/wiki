@@ -17,7 +17,6 @@ Overlooted > Build > 1b - Main Menu Scene
 Overlooted > Build > 2 - Prefabs
 Overlooted > Build > 3 - Zone Scenes      ← creates Hub + all zone scenes
 Overlooted > Build > 4 - UI / HUD
-Overlooted > Build > 5 - Sync StreamingAssets
 ```
 
 Or run all at once: **Overlooted → Build → All**

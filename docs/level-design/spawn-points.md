@@ -20,13 +20,12 @@
 
 ## Adding a New Spawn Point
 
-1. Add the `itemSpawnPoints` entry to `zones.json`:
+1. Add the `itemSpawnPoints` entry to `zones.json` in `Assets/StreamingAssets/Data/Zones/`:
    ```json
    { "itemDefinitionId": "item.sword", "spawnChance": 0.7, "spawnPointId": "crypt_spawn_04" }
    ```
-2. Run **Overlooted → Build → 5 - Sync StreamingAssets**
-3. Delete the zone scene file to force a full rebuild, then run **Overlooted → Build → 3 - Zone Scenes**
-4. The new `crypt_spawn_04` GameObject appears in the scene — reposition it as desired
+2. Delete the zone scene file to force a full rebuild, then run **Overlooted → Build → 3 - Zone Scenes**
+3. The new `crypt_spawn_04` GameObject appears in the scene — reposition it as desired
 
 !!! tip
     To add a spawn point without rebuilding the whole scene, just create an empty GameObject named `crypt_spawn_04` as a child of `ItemSpawnPoints` manually. `ZoneLoader` finds it by name.

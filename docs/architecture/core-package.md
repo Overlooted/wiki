@@ -1,8 +1,17 @@
 # Core Package
 
-`Overlooted-Core` is a sibling repo that lives at `../Overlooted-Core` relative to the Unity project.
+`Overlooted-Core` is a sibling repo at `../Overlooted-Core` relative to the Unity project.
 
-It is referenced as a **local Unity package** (`com.overlooted.core`) — Unity compiles the C# source directly. No DLL rebuild is needed; save a `.cs` file in Core and Unity recompiles automatically.
+It is referenced as a **local Unity package** (`com.overlooted.core`) — Unity compiles the C# source directly. No DLL rebuild needed; save a `.cs` file in Core and Unity recompiles automatically.
+
+## What Core Contains
+
+- Domain logic — `ItemSystem`, `AppraisalSystem`, `VendorSystem`, `GoblinStateMachine`, etc.
+- Data contracts — `ItemDefinition`, `RarityDefinition`, `ZoneDefinition`, etc.
+- `DataLoader` — deserialises JSON into typed records
+- `DataValidator` — validates cross-references between registries (no file I/O)
+
+Core has no dependency on Unity. It does not own or read any data files.
 
 ## Running Core Tests
 
@@ -11,17 +20,21 @@ cd ../Overlooted-Core
 dotnet test
 ```
 
-## StreamingAssets Sync
+Core tests use mock/inline data. They test logic, not data files.
 
-JSON data files are authored in `Overlooted-Core/Data/` and copied to `Assets/StreamingAssets/Data/` for runtime access.
+## Data Validation
 
+Real game data lives in `Assets/StreamingAssets/Data/` in the Unity project. Unity's EditMode tests load from there and pass the data into `DataValidator`:
+
+```csharp
+// DataValidationTests.cs (EditMode)
+var items    = DataLoader.Load<ItemDefinition>(File.ReadAllText(...));
+var rarities = DataLoader.Load<RarityDefinition>(File.ReadAllText(...));
+var errors   = DataValidator.Validate(items, rarities, tools, zones, vendors, en, assetIds);
+Assert.IsEmpty(errors);
 ```
-Overlooted-Core/Data/   ← source of truth (edit here)
-        ↓
-Assets/StreamingAssets/Data/   ← runtime copy (never edit directly)
-```
 
-To sync: **Overlooted → Build → 5 - Sync StreamingAssets**
+This runs automatically on every CI push. Broken rarity references, missing localization keys, invalid spawn chances — all caught before a build ships.
 
 ## JSON Registries
 

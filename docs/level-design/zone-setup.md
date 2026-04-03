@@ -54,8 +54,7 @@ All tags are registered in `ProjectSettings/TagManager.asset`.
 
 ## Adding a New Zone
 
-1. Add entry to `zones.json` in Core
-2. Run **Overlooted → Build → 5 - Sync StreamingAssets**
-3. Run **Overlooted → Build → 3 - Zone Scenes** — the new scene is created automatically
-4. Reposition spawn point GameObjects as needed
-5. Build out the level geometry and add portals manually
+1. Use **Overlooted → Content → New Zone…** to create the entry in `zones.json` (or edit the file directly in `Assets/StreamingAssets/Data/Zones/`)
+2. Run **Overlooted → Build → 3 - Zone Scenes** — the new scene is created automatically
+3. Reposition spawn point GameObjects as needed
+4. Build out the level geometry and add portals manually
