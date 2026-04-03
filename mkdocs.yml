@@ -110,3 +110,4 @@ nav:
     - Overview: cicd/index.md
     - Build Pipeline: cicd/build-pipeline.md
     - Deploying to itch.io: cicd/itch-deploy.md
+  - API Reference: api/index.md
