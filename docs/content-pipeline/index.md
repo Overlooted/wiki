@@ -19,6 +19,7 @@ Every JSON-driven content type has a one-click wizard under **Overlooted → Con
 
 | Tool | Menu | What it does |
 |---|---|---|
+| [Data Tables](data-tables.md) | Overlooted > Content > Data Tables | Sortable, filterable table view of all JSON — inline edit and delete |
 | [Asset Library](asset-library.md) | *(runtime)* | Maps IDs → Resources paths, plays sfx/vfx |
 | [Asset Scanner](asset-scanner.md) | Overlooted > Assets > Asset Scanner | Finds unregistered files, one-click register |
 | [Item Prefab Generator](item-prefab-generator.md) | Overlooted > Content > Generate Item Prefabs | Batch-creates prefab variants from items.json |

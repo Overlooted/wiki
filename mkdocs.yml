@@ -68,6 +68,7 @@ nav:
     - New Vendor Wizard: content-pipeline/new-vendor-wizard.md
     - New Rarity Wizard: content-pipeline/new-rarity-wizard.md
     - New Vendor Upgrade Wizard: content-pipeline/new-vendor-upgrade-wizard.md
+    - Data Tables: content-pipeline/data-tables.md
     - Item Prefab Generator: content-pipeline/item-prefab-generator.md
     - Rarity Feedback Profiles: content-pipeline/rarity-feedback.md
     - StreamingAssets Setup: content-pipeline/streaming-assets.md
